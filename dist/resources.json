@@ -1,0 +1,268 @@
+{
+    "resources": [
+        {
+            "name": "../../../sap-ui-version.json"
+        },
+        {
+            "name": "model/menus.json"
+        },
+        {
+            "name": "model/Unit.json"
+        },
+        {
+            "name": "model/TaxMatrix.json"
+        },
+        {
+            "name": "model/QuotationUnitTable.json"
+        },
+        {
+            "name": "model/QuotationTermsTable.json"
+        },
+        {
+            "name": "model/QuotationStatGroup.json"
+        },
+        {
+            "name": "model/QuotationPricing.json"
+        },
+        {
+            "name": "model/QuotationFinSchemes.json"
+        },
+        {
+            "name": "model/QuotationAmortSched.json"
+        },
+        {
+            "name": "model/Quotation.json"
+        },
+        {
+            "name": "model/Project.json"
+        },
+        {
+            "name": "model/BusinessUser.json"
+        },
+        {
+            "name": "model/BusinessRoleStatus.json"
+        },
+        {
+            "name": "model/BusinessRole.json"
+        },
+        {
+            "name": "model/BusinessPartnerDocs.json"
+        },
+        {
+            "name": "model/BusinessPartner.json"
+        },
+        {
+            "name": "model/AllProjectStatus.json"
+        },
+        {
+            "name": "model/AllCivilStats.json"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "controller/Unit.controller.js"
+        },
+        {
+            "name": "controller/TaxMatrix.controller.js"
+        },
+        {
+            "name": "controller/Reservation.controller.js"
+        },
+        {
+            "name": "controller/Quotation.controller.js"
+        },
+        {
+            "name": "controller/Project.controller.js"
+        },
+        {
+            "name": "controller/Pricelist.controller.js"
+        },
+        {
+            "name": "model/temp_BusinessPartner.json"
+        },
+        {
+            "name": "controller/Main.controller.js"
+        },
+        {
+            "name": "controller/Login.controller.js"
+        },
+        {
+            "name": "controller/Dashboard.controller.js"
+        },
+        {
+            "name": "controller/BusinessUser.controller.js"
+        },
+        {
+            "name": "controller/BusinessRole.controller.js"
+        },
+        {
+            "name": "controller/BusinessPartner.controller.js"
+        },
+        {
+            "name": "controller/AppUI5.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Unit-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/TaxMatrix-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Reservation-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Quotation-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Project-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Pricelist-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/PaymentEntry-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Main-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Login-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Dashboard-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/BusinessUser-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/BusinessRole-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/BusinessPartner-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/AppUI5-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/PaymentEntry.controller.js"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "view/fragments/UnitChooseDialogFragment.fragment.xml"
+        },
+        {
+            "name": "view/fragments/ReservationActionFragment.fragment.xml"
+        },
+        {
+            "name": "view/fragments/RemarksTimelineFragment.fragment.xml"
+        },
+        {
+            "name": "view/fragments/QuotationActionFragment.fragment.xml"
+        },
+        {
+            "name": "view/fragments/PricingFormFragment.fragment.xml"
+        },
+        {
+            "name": "view/fragments/LogoutActionFragment.fragment.xml"
+        },
+        {
+            "name": "view/fragments/DisplayAmortSchedFragment.fragment.xml"
+        },
+        {
+            "name": "view/fragments/BPDialogFragment.fragment.xml"
+        },
+        {
+            "name": "view/Unit.view.xml"
+        },
+        {
+            "name": "view/TaxMatrix.view.xml"
+        },
+        {
+            "name": "view/Reservation.view.xml"
+        },
+        {
+            "name": "view/Quotation.view.xml"
+        },
+        {
+            "name": "view/Project.view.xml"
+        },
+        {
+            "name": "view/Pricelist.view.xml"
+        },
+        {
+            "name": "view/PaymentEntry.view.xml"
+        },
+        {
+            "name": "view/Main.view.xml"
+        },
+        {
+            "name": "view/Login.view.xml"
+        },
+        {
+            "name": "view/Dashboard.view.xml"
+        },
+        {
+            "name": "view/BusinessUser.view.xml"
+        },
+        {
+            "name": "view/BusinessRole.view.xml"
+        },
+        {
+            "name": "view/BusinessPartner.view.xml"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "css/apptechlogo.PNG"
+        },
+        {
+            "name": "index.html"
+        }
+    ]
+}
