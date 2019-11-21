@@ -1,0 +1,93 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:uxap="sap.uxap" 
+	xmlns:f="sap.ui.layout.form" xmlns:tnt="sap.tnt" xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified" controllerName="com.apptech.realestate.controller.TaxMatrix">
+	<App>
+		<pages>
+			<Page title="Tax Matrix">
+				<content>
+					<IconTabBar id="idIconTabBarInlineMode" headerMode="Inline" upperCase="true" expandable="false" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter id="tab1" text="Records" count="0" key="tab1">
+								<t:Table id="tblTax" selectionMode="Single" visibleRowCount="10" ariaLabelledBy="title" enableCellFilter="true">
+									<t:extension>
+										<Toolbar>
+											<content>
+												<Button text="Add" tooltip="Add" press="onAdd" icon="sap-icon://add"/>
+												<Button text="Edit" tooltip="Edit" press="onEdit" icon="sap-icon://edit"/>
+												<ToolbarSpacer/>
+												<SearchField placeholder="Filter" value="" search="filterGlobally" width="15rem"/>
+											</content>
+										</Toolbar>
+									</t:extension>
+								</t:Table>
+							</IconTabFilter>
+							<IconTabFilter id="tab2" text="Add / Edit" key="tab2">
+								<Button text="Save Changes" tooltip="Save" press="onSave" icon="sap-icon://save"/>
+								<VBox class="sapUiTinyMargin">
+									<f:SimpleForm id="basicForm" editable="false" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+										<f:content>
+											<Label text="Tax Code"/>
+												<Input value="{oMdlEditRecord>/EditRecord/TaxCode}" editable="false" enabled="false"/>
+											<Label text="Tax Description"/>
+											<Input value="{oMdlEditRecord>/EditRecord/TaxDesc}"/>
+											<Label text="Build Type"/>
+												<Select id="selectRefBuildTypes" items="{oMdlBuildTypes>/allbuildtypes}" selectedKey="{oMdlEditRecord>/EditRecord/BuildTypeCode}">
+													<core:ListItem key="{oMdlBuildTypes>Code}" text="{oMdlBuildTypes>Code} - {oMdlBuildTypes>Desc} "/>
+												</Select>
+											<Label text="Amount Limit From" width="100%">
+												<layoutData>
+													<l:GridData span="L1 M3 S12"/>
+												</layoutData>
+											</Label>
+											<Input width="100%" value="{oMdlEditRecord>/EditRecord/AmountLimitFrom}" type ="Number" placeholder ="0.00">
+												<layoutData>
+													<l:GridData span="L5 M3 S12"/>
+												</layoutData>
+											</Input>
+											<Label text="To" width="100%">
+												<layoutData>
+													<l:GridData span="L5 M1 S12"/>
+												</layoutData>
+											</Label>
+											<Input width="100%" value="{oMdlEditRecord>/EditRecord/AmountLimitTo}" type ="Number" placeholder ="0.00">
+												<layoutData>
+													<l:GridData span="L1 M3 S3"/>
+												</layoutData>
+											</Input>
+											<Label text="Rate"/>
+											<Input value="{oMdlEditRecord>/EditRecord/Rate}" type="Number" placeholder ="0.00"/>
+											<Label text="Remarks"/>
+											<Input value="{oMdlEditRecord>/EditRecord/Remarks}"/>
+											<Label text="Validation Date"/>
+											<Label text="Date Valid From" width="100%">
+												<layoutData>
+													<l:GridData span="L1 M3 S12"/>
+												</layoutData>
+											</Label>
+												<DatePicker  valueFormat="MM/dd/yyyy" displayFormat="MM/dd/yyyy" change="handleChange" value="{oMdlEditRecord>/EditRecord/ValidDateFrom}">
+												<layoutData>
+													<l:GridData span="L1 M3 S3"/>
+												</layoutData>
+											</DatePicker>
+											<Label text="To" width="100%">
+												<layoutData>
+													<l:GridData span="L5 M1 S12"/>
+												</layoutData>
+											</Label>
+											<DatePicker  valueFormat="MM/dd/yyyy" displayFormat="MM/dd/yyyy" change="handleChange" value="{oMdlEditRecord>/EditRecord/ValidDateTo}">
+												<layoutData>
+													<l:GridData span="L1 M3 S3"/>
+												</layoutData>
+											</DatePicker>
+										
+										</f:content>
+									</f:SimpleForm>
+								</VBox>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

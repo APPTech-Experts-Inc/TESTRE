@@ -1,0 +1,9 @@
+{
+	"RoleStatus": [{
+		"text": "Active",
+		"key": "Y"
+	}, {
+		"text": "Inactive",
+		"key": "N"
+	}]
+}

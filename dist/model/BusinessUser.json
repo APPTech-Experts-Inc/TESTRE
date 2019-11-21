@@ -1,0 +1,11 @@
+{
+	"EditRecord": {
+		"Code": "",
+		"LoginCode": "",
+		"Password": "",
+		"RoleCode": "",
+		"IsLocked": "",
+		"EmailPassRecovery": "",
+		"DatePasswordChange" : ""
+	}
+}
